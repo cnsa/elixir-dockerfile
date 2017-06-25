@@ -1,7 +1,7 @@
 # Elixir + Iconv Dockerfile
 
     $ VERSION=latest FOLDER=1.3 make build
-    $ VERSION=latest FOLDER=1.3 make push
+    $ VERSION=latest make push
     
     # Build and push together
     $ VERSION=latest FOLDER=1.4 make all
