@@ -1,18 +1,10 @@
-VERSION?=1.3.4
+VERSION?=latest
+FOLDER?=1.4
 
 all: build push
 
-latest: tag_latest push_latest
-
 build:
-	docker build --build-arg VERSION=${VERSION} -t cnsa/elixir:${VERSION} .
-
-tag_latest:
-	docker tag cnsa/elixir:${VERSION} cnsa/elixir:latest
+	docker build -t cnsa/elixir-iconv:${VERSION} ./${FOLDER}
 
 push:
-	docker push cnsa/elixir:${VERSION}
-
-push_latest:
-	docker push cnsa/elixir:latest
-
+	docker push cnsa/elixir-iconv:${VERSION}
