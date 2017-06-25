@@ -1,4 +1,4 @@
-FROM elixir:1.3.2
+FROM elixir:1.3.4
 MAINTAINER Alexander Merkulov @merqlove
 
 WORKDIR /tmp
