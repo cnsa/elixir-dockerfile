@@ -1,5 +1,5 @@
 VERSION?=latest
-FOLDER?=1.4
+FOLDER?=1.5
 
 all: build push
 
